@@ -37,7 +37,11 @@ mongoose
   .catch((err) => {
     console.log("err: ", err.message);
   });
+  
+  app.get("/", (res, req)=>{
+  res.status(200).send("Api is Working")
 
+  })
 //server listeining on port 5000
 const server = app.listen(5000, () => console.log(`Server started on 5000`));
 
