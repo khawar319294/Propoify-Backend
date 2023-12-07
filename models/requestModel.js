@@ -1,10 +1,10 @@
 const mongoose = require("mongoose");
 
 const requestSchema = new mongoose.Schema({
-  info: {
-    type: String,
-    required: true,
-  },
+  // info: {
+  //   type: String,
+  //   required: true,
+  // },
 
   subject: {
     type: String,

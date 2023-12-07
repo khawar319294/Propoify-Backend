@@ -2,10 +2,10 @@ const Contact = require("../models/requestModel");
 
 module.exports.postRequest = async (req, res, next) => {
   try {
-    const { info, subject, name, email, phone, message } = req.body;
+    const {  subject, name, email, phone, message } = req.body;
 
     const contact = await Contact.create({
-      info,
+      
       subject,
       name,
       email,
