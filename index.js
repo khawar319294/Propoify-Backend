@@ -38,6 +38,12 @@ mongoose
     console.log("err: ", err.message);
   });
 
+<<<<<<< HEAD
+=======
+app.get("/", (req, res) => {
+  res.status(200).send("Api is Working");
+});
+>>>>>>> 111273ee3552f099953c5c5b1fb1f437dd72f336
 //server listeining on port 5000
 const server = app.listen(5000, () => console.log(`Server started on 5000`));
 
