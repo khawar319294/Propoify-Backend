@@ -404,10 +404,10 @@ module.exports.buyPropertyToken = async (req, res, next) => {
       let holder = (property.propertyOwner[positionOfOwner].tokenHolder -=
         parseInt(currentListedTokens));
 
-      // Use filter to remove the owner if currentListedTokens is "0"
-      property.propertyOwner = property.propertyOwner.filter(
-        (owner) => owner.tokenHolder !== "0"
-      );
+      // // Use filter to remove the owner if currentListedTokens is "0"
+      // property.propertyOwner = property.propertyOwner.filter(
+      //   (owner) => owner.tokenHolder !== "0"
+      // );
 
       property.listedBy = property.listedBy.filter(
         (address) => address !== ownerWalletAddress
